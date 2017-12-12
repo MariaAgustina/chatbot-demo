@@ -5,7 +5,6 @@
 https://watson-conversation.ng.bluemix.net CON EL USUARIO Y CORRESPONDIENTE AL CHATBOT CREADO EN EL BACKEND
 **/
 
-
 //DEBIN WORKSPACE CONFIG
 $username="b3e1edaa-6707-43b0-9006-62cb0a7c0a88";
 $password="WOop7XhbvaCC";
