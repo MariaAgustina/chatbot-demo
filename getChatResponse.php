@@ -6,6 +6,9 @@
     $result = CallAPI("POST","https://gateway.watsonplatform.net/conversation/api/v1/workspaces/".$_SESSION['chatbot-workspaceId']."/message?version=2017-05-26",$data_string);
     $jsonData = json_decode($result, true);
     $response = $jsonData["output"]["text"][0];
+ //    echo '<pre>';
+	// 	echo print_r($jsonData);
+	// echo '</pre>';
     echo $response;
 ?>
 

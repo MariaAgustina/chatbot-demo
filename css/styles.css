@@ -8,6 +8,11 @@ h1{
 p{
     font-size: 18px;
 }
+
+.clear{
+    clear: both;
+}
+
 .mytext{
     border:0;padding:10px;background:whitesmoke;
 }
@@ -124,7 +129,7 @@ input:focus{
     overflow-y: scroll;
 }
 
-.message-question {
+.message-response{
     color: #333;
     width: 70%;
     border-radius: 5px;
@@ -134,7 +139,7 @@ input:focus{
     margin-left: 15px;
 }
 
-.message-response{
+.message-question {
     color:#333;
     width: 70%;
     border-radius: 5px;
@@ -146,4 +151,51 @@ input:focus{
 
 .messagesWrapper p{
     padding: 10px;
+}
+
+.slider{
+    background-color: white;
+}
+
+.slider-left-arrow{
+    width: 20px;
+}
+
+.slider-right-arrow{
+    width: 20px;
+}
+
+
+.slider-img img{
+    width: 350px;
+}
+
+.slider-img img.middle{
+    width: 330px;
+}
+
+.slider-img img.arrow{
+    width: 20px;
+    margin: 5px;
+}
+
+.slider-container{
+    width: 1200px;
+    overflow: auto;
+
+}
+
+.buttons-container{
+    margin-left: 15px;
+}
+
+.button-option{
+    background-color: #75fdbd;
+    width: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-option p{
+    font-size: 16px;
 }
