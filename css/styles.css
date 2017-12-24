@@ -11,21 +11,7 @@ p{
 .mytext{
     border:0;padding:10px;background:whitesmoke;
 }
-.text{
-    width:75%;display:flex;flex-direction:column;
-}
-.text > p:first-of-type{
-    width:100%;margin-top:0;margin-bottom:auto;line-height: 13px;font-size: 12px;
-}
-.text > p:last-of-type{
-    width:100%;text-align:right;color:silver;margin-bottom:-7px;margin-top:auto;
-}
-.text-l{
-    float:left;padding-right:10px;
-}        
-.text-r{
-    float:right;padding-left:10px;
-}
+
 .avatar{
     display:flex;
     justify-content:center;
@@ -35,7 +21,7 @@ p{
     padding-right:10px;
 }
 .macro{
-    margin-top:5px;width:85%;border-radius:5px;padding:5px;display:flex;
+    margin-top:5px;border-radius:5px;padding:5px;display:flex;
 }
 .msj-rta{
     background:whitesmoke;
@@ -73,17 +59,7 @@ ul {
     border-width: 0 13px 13px 0;
     border-color: transparent #ffffff transparent transparent;            
 }
-.msj-rta:after{
-    width: 0;
-    height: 0;
-    content:"";
-    top:-5px;
-    left:14px;
-    position:relative;
-    border-style: solid;
-    border-width: 13px 13px 0 0;
-    border-color: whitesmoke transparent transparent transparent;           
-}  
+
 input:focus{
     outline: none;
 }        
@@ -98,4 +74,76 @@ input:focus{
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
+}
+
+/*Debin*/
+.complete-background-debin{
+    background-image:url("/images/debin-background.png");
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }   
+
+.chat-container-debin {
+    float: right;
+    bottom: 15px;
+    position: fixed;
+    right: 30px;
+    height: 435px;
+    width: 400px;
+}
+
+.responses-debin{
+    height: 352px;
+    border-radius:0px;
+}
+
+.write-question-debin{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.write-question-debin .text{
+    width: 100%;
+}
+
+.chat-header{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 33px;
+    background-color: #75fdbd;
+}
+
+.chat-header p{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.text-response{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.message-question {
+    color: #333;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 15px;
+    float: left;
+    background-color: #e5e5e5;
+    margin-left: 15px;
+}
+
+.message-response{
+    color:#333;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 15px;
+    float: right;
+    background-color: #d5feeb;
+    margin-right: 15px;
+}
+
+.messagesWrapper p{
+    padding: 10px;
+}
