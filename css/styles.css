@@ -149,6 +149,10 @@ input:focus{
     margin-right: 15px;
 }
 
+.messagesWrapper{
+    overflow: auto;
+}
+
 .messagesWrapper p{
     padding: 10px;
 }
@@ -165,6 +169,10 @@ input:focus{
     width: 20px;
 }
 
+.slider-img{
+    overflow-x: scroll;
+    overflow: hidden;
+}
 
 .slider-img img{
     width: 350px;
@@ -177,10 +185,11 @@ input:focus{
 .slider-img img.arrow{
     width: 20px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .slider-container{
-    width: 1200px;
+    width: 1174px;
     overflow: auto;
 
 }

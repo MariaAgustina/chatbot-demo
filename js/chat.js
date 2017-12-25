@@ -6,6 +6,7 @@ function messageSent(event) {
         console.log(textValue);
         var htmlChatInputText = "<p class=message-question>"+textValue+"</p>"
         $('.messagesWrapper').append(htmlChatInputText);
+        scrollToBottom();
         $.ajax({
             url: './getChatResponse.php?chatInput='+textValue,
             type: 'POST',
@@ -13,12 +14,18 @@ function messageSent(event) {
             data = checkSlider(data);
             var htmlChatText = "<p class=message-response>"+data+"</p>"
             $('.messagesWrapper').append(htmlChatText);
+            scrollToBottom();
             console.log(data);
         });
 
         document.getElementById('chatInput').value = "";
 
     }
+}
+
+function scrollToBottom(){
+    var objDiv = document.getElementById("text-response");
+    objDiv.scrollTop = objDiv.scrollHeight;
 }
 
 function checkSlider(data){
@@ -36,6 +43,7 @@ function showSlider(){
         console.log("show slider");
         $.get("slider.php", function(data){
             $('.messagesWrapper').append(data);
+            scrollToBottom();
             setupSliderButtons();
         });
         showConditions();
@@ -47,6 +55,7 @@ function showConditions(){
     setTimeout(function() {
             var htmlChatText = "<p class=message-response>Y estas son sus condiciones:</br> - En pesos y en dólares<br> - Todos los días, las 24 horas</br> - Los débitos son gratuitos</br> - La acreditación tiene costo</br></p>"
             $('.messagesWrapper').append(htmlChatText);
+            scrollToBottom();
             showButtonOptions();
     }, 7000);
 }
@@ -55,9 +64,11 @@ function showButtonOptions(){
     setTimeout(function() {
         var htmlChatText = "<p class=message-response>Quizás te interese saber más sobre alguno de estos medios de pago electrónico inmediatos (PEI)</p>"
         $('.messagesWrapper').append(htmlChatText);
-
+        scrollToBottom();
+        
         $.get("button-options.php", function(data){
             $('.messagesWrapper').append(data);
+            scrollToBottom();
             setupButtonOptions();
         });
 
@@ -69,26 +80,29 @@ function shouldShowSlider(data){
 }
 
 function setupSliderButtons(){
-   var leftArrow = document.getElementById('slider-left-arrow');
 
-    leftArrow.style.cursor = 'pointer';
-
-    //TODO: no me anda el scroll
-    leftArrow.onclick = function() {
-        console.log("cahs");
-        var elmnt = document.getElementById("slider-container");
-        elmnt.scrollLeft = 50;
+    var rightArrow1 = document.getElementById('slider-right-arrow-1');
+    rightArrow1.onclick = function() {
+        var objDiv = document.getElementById("slider");
+        objDiv.scrollLeft = 391;
     };
 
+    var rightArrow2 = document.getElementById('slider-right-arrow-2');
+    rightArrow2.onclick = function() {
+        var objDiv = document.getElementById("slider");
+        objDiv.scrollLeft = 782;
+    };
 
-    var rightArrow = document.getElementById('slider-right-arrow');
+    var leftArrow1 = document.getElementById('slider-left-arrow-1');
+    leftArrow1.onclick = function() {
+        var objDiv = document.getElementById("slider");
+        objDiv.scrollLeft = 0;
+    };
 
-    rightArrow.style.cursor = 'pointer';
-
-    rightArrow.onclick = function() {
-        var elmnt = document.getElementById("slider-container");
-        console.log(elmnt);
-        elmnt.scrollRight = 50;
+    var leftArrow2 = document.getElementById('slider-left-arrow-2');
+    leftArrow2.onclick = function() {
+        var objDiv = document.getElementById("slider");
+        objDiv.scrollLeft = 391;
     };
 
 }
@@ -100,8 +114,10 @@ function setupButtonOptions(){
         console.log("wallet");
         var htmlChatText = "<p class=message-response>La Billetera Electrónica es un servicio de transferencias de celular a celular a través de una aplicación para teléfonos móviles. </br>En este video podés ver cómo transformar tu Smartphone en una Billetera Electrónica:</p>"
         $('.messagesWrapper').append(htmlChatText);
+        scrollToBottom();
         $.get("wallet-video.php", function(data){
             $('.messagesWrapper').append(data);
+            scrollToBottom();
             setupButtonOptions();
         });
 

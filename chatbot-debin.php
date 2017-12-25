@@ -13,7 +13,7 @@
 	        		<p>ASISTENTE DEBIN</p>
 	        	</div>
 	            <div class="msj-rta macro responses-debin" style="margin:auto">                        
-	                <div class="text text-r text-response">
+	                <div class="text text-r text-response" id="text-response">
 	                    <div class="messagesWrapper">
 		                    <p class="message-response">Hola, ¿tenés alguna consulta sobre el DEBIN?</p>
 	                    </div>
