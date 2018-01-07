@@ -1,0 +1,172 @@
+.complete-background-twitter{
+    background-image:url("/images/twitter-background.png");
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.responses-twitter{
+    height: 370px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.chat-container-twitter{
+	background-color: transparent;
+    min-height: 250px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 640px;
+    margin-left: -320px;
+}
+
+div.msj-rta.macro.responses-twitter{
+    padding: 30px 40px;
+}
+
+.responses-twitter img.header-image {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+}
+
+.msj-rta{
+	background-color: white;
+}
+
+.macro{
+    display: block;
+}
+
+span.FullNameGroup {
+    display: block;
+    color: #14171a;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    max-width: 32ch;
+    margin-left: 60px;
+}
+
+span.username{
+    display: block;
+    margin-left: 60px;
+    font-size: 14px;
+    color: #657786;
+}
+
+span.username b{
+    font-weight: normal;
+}
+.header-title{
+    flex: 1;
+}
+
+img.follow-image{
+    position: absolute;
+    margin-left: 402px;
+    margin-top: -46px;
+    width: 148px;
+}
+
+.chat-container-twitter h2{
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: .01em;
+    font-weight: normal;
+}
+
+.chat-container-twitter h2 a{
+    color: #1DA1F2;
+}
+
+.QuoteTweet-container {
+    border: solid 1px #e6ecf0;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top:20px;
+}
+
+.ReplyingToContextBelowAuthor{
+    font-size: 14px;
+    color: #657786;
+}
+
+.QuoteTweet-container .tweet-content{
+    padding: 12px;
+}
+
+.tweet-content span.username{
+    display: initial;
+    margin-left: 0px;
+    line-height: 2.0;
+}
+
+.client-and-actions{
+    margin-top: 12px;
+}
+
+.stream-item-footer{
+    margin-top: 10px;
+}
+
+.stream-item-footer img{
+    width: 18px;
+    height: 18px;
+}
+
+.stream-item-footer img.middle{
+    margin-left: 60px;
+}
+
+.stream-item-footer span.username{
+    display: initial;
+    margin-left: 5px;
+}
+
+.write-question-debin{
+    padding: 0px;
+}
+
+div.text.text-r{
+    padding: 15px 40px 15px 95px;
+    background: #e6ecf0 !important;
+}
+
+input#chatinput.mytext{
+    width: 100%;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #1DA1F2;
+}
+
+
+img.small-logo {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    margin-left: 43px;
+    margin-top: 18px;
+}
+
+div.text.text-response{
+    background: white;
+}
+
+.messagesWrapper .tweet-content{
+    padding: 15px 40px 15px 95px;
+}
+
+img.mid-logo {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    margin-left: 31px;
+    margin-top: 18px;
+}

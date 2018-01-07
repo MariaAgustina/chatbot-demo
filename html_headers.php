@@ -14,7 +14,6 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
 
-
 <?php
 //show errors
 //pasar 0 para no reportar y 1 para reporar
